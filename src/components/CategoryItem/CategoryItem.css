@@ -1,0 +1,317 @@
+.category {
+    flex: 1 0 auto;
+    max-width: 50%;
+    width: 30rem;
+    background:#fff;
+    font-size: 1.4rem;
+    color:#19171c;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    transition: all .4s;
+
+    & * {
+        transition: all .4s;
+    }
+
+    & .textSec {
+        border-bottom: none !important;
+    }
+
+    & .add {
+        position: absolute; 
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        color:#ddd !important;  
+    }
+
+    & figure {
+        margin: 0;
+        background-color: #faf9fa;
+        display: block;
+        position: relative;
+        flex-shrink: 0;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+    }
+
+    & img {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    & .title {
+        margin: .5rem 0 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    & .ico {
+        display: flex;
+        align-items: center;
+        padding: 0;
+
+        & span {
+            margin-right: .4rem;
+        }
+    }
+    & span {
+        color: #bbb;
+        font-size: .8rem;
+        display: flex;
+        align-items: center;
+
+        & svg {
+            width: 16px !important;
+            height: 16px !important;
+            color:#bbb !important;
+            fill:#bbb !important;
+        }
+    }
+
+    & .onlineTarget {
+        display: none;
+    }
+}
+
+.search, .random {
+    font-size: 1.4rem;
+    color:#fff;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    overflow: hidden;
+    transition: all .4s;
+
+    &.online {
+        & .imgWrapper {
+            background: #8bc34a;
+        }
+        & .onlineTarget {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background:#cddc39;
+            display: block;
+
+            & span {
+                display: none;
+            }
+        }
+    }
+
+    & .onlineTarget {
+        margin-right:1.4rem;
+    }
+    
+    &:hover {
+        background:#392e5c;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    & .imgWrapper {
+        width: 36px;
+        height: 36px;
+        background:#ccc;
+        margin-left: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+    & .textSec {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        font-size: 12px;
+        overflow: hidden;    
+        line-height: 1.2rem;
+        margin-right: 1.5rem;
+        padding: 0 0 0 10px; 
+    }
+
+    & .add {
+        position: absolute; 
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        color:#ddd !important; 
+        display: none !important;
+    }
+    & img {
+        display: none;
+    }
+    & .title {
+        font-size: 1.4rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-bottom: .4rem;
+    }
+    & .ico {
+        display: flex;
+        align-items: center;
+
+        & span {
+            margin-right: 4px;
+        }
+    }
+
+    & span {
+        color: #bbb;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        & svg {
+            width: 16px !important;
+            height: 16px !important;
+            color:#bbb !important;
+        }
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.random {
+    &.online {
+        & .imgWrapper {
+            background: #000;
+            // background: #6441a4;
+        }
+    }
+}
+.screen {
+    font-size: 12px;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    float: left;
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    opacity: .9;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        background: #6441a4;
+        color: #fff;
+        opacity: 1;
+    }
+
+    & .onlineTarget {
+        display: none;
+    }
+
+    & .imgWrapper {
+        width: 80px;
+        height: 50px;
+        background:#eee;
+    }
+
+    & .textSec {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        font-size: 12px;
+        overflow: hidden;
+    }
+
+    & .add {
+        position: absolute; 
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        color:#ddd !important; 
+        display: none !important;
+    }
+    & img {
+        width: 80px !important;
+        height: 50px !important;
+        border-radius: 0 !important;
+        opacity: 0;
+    }
+    & .title {
+        margin: 0 10px;
+        padding: 0;
+        height: 14px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    & .ico {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+
+        & span {
+            margin-right: 4px;
+        }
+    }
+    & span {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        & svg {
+            width: 16px !important;
+            height: 16px !important;
+            color:#bbb !important;
+        }
+    }
+
+    &:hover {
+        opacity: 1;
+
+    }
+}
+
+.outside {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: auto;
+    border-radius: 1rem 0 0 1rem;
+    background: #faa61a;
+    color: #fff;
+    padding: 0 .25rem 0 .75rem;
+    font-size: 1rem;
+}
+
+.imgFadeIn {
+    opacity: 1 !important;
+}
+
+.notShow {
+    display: none;
+}

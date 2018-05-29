@@ -1,0 +1,70 @@
+.outerClass {
+    padding: 0 !important;
+}
+
+.contentClass {
+    max-width: 568px !important;
+}
+
+.overlayClass {
+    background:rgba(0, 0, 0, .79) !important;
+}
+
+
+.registerSec {
+    display:flex;
+    align-items: stretch;
+    justify-content: center;
+
+    & .inputSec {
+        flex: 2;
+        padding: 35px 20px 30px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    & h4 {
+        margin: 0;
+        color:#000;
+
+        & span {
+            color:#f0ad4e;
+        }
+    }
+
+    & .imageSec {
+        width: 100%;
+        flex: 1.5;
+        padding: 20px;
+        min-height: 420px;
+    }
+
+    & .regBg {
+        background: url('../../../assets/default_bg_reg.jpg') center center;
+    }
+
+    & .loginBg {
+        background: url('../../../assets/default_bg_login.jpg') center center;
+    }
+    
+    & .btnGroup {
+
+    }
+
+    & .underSec {
+        margin: 20px 0 0;
+
+        & a {
+            text-decoration: none;
+            color: #6f4ab1;
+            font-size: 12px;
+        }
+    }
+}
+
+.checkbox {
+    font-size: 13px;
+    color:#888;
+    margin: 10px 0 20px;
+}

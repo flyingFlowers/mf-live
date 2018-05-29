@@ -1,0 +1,22 @@
+.flex {
+    display: flex;
+}
+
+.chat {
+    padding: 20px;
+    composes: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    top:0;
+    right: 0;
+    max-width: 340px;
+    width: 30rem;
+    background: #efeef1;
+    color:#333;
+    font-size: 1.4rem;
+}
+
+.chatClose {
+    display: none;
+}

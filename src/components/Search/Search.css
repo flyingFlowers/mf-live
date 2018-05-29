@@ -1,0 +1,79 @@
+.searchBar {
+    height: 36px;
+    width: 20rem;
+    bottom: 0;
+    z-index: 2;
+    position: absolute;
+    right: 4rem;
+    bottom: 0px;
+    
+    & input {
+        height: 100%;
+        padding: 0;
+        background:none;
+        font-size: 14px;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #dad8de;
+        outline: none;
+        color:#666;
+        box-sizing: border-box;
+
+        &:focus {
+            background:none;
+            color:#666;
+            border-bottom: 1px solid #6f4ab1;
+        }
+    }
+
+    & .fdjico {
+        position: absolute;
+        right: 2px;
+        top: 4px;
+        display: flex;
+        width: 28px;
+        height: 28px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .searchBar {
+        width: 100%;
+        right: 0;
+        bottom: -3rem;
+    }
+}
+
+.scrollBox {
+    height: 200px !important;
+    max-height: 200px !important;
+    position: absolute !important;
+}
+
+.loader {
+    margin: 10px auto;
+    text-align: center;
+    line-height: 0em;
+}
+
+.searchResult {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #2c2541;
+    z-index: 1;
+    min-height: 50px;
+}
+
+.emptyContent {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    font-size: 12px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color:#fff;
+}

@@ -1,0 +1,20 @@
+
+.chatInput {
+    height: 46px;
+    position: relative;
+    & textarea {
+        color:#666;
+        overflow: auto;
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid rgba(255, 255, 255, 0.17);
+        border-radius: 3px;
+        background: #fff;
+        height: 100%;
+        font-family: initial;
+        padding: .85rem 5rem .85rem .85rem;
+        resize: none;
+        font-size: 1.4rem;
+        outline: none;
+    } 
+}

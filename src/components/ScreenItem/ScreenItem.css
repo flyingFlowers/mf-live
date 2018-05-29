@@ -1,0 +1,166 @@
+
+.stageItem.oneScreen:first-child {
+    width: 100%;
+}
+
+.stageItem {
+    color:#fff;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    background: none;
+    position: relative;
+    margin: 0;
+    height: auto;
+    padding: 0 .5% .5%;
+
+    & ul {
+        list-style: none;
+        padding: 0;
+        overflow: hidden;
+        margin: 0;
+
+        & li {
+            display: block; 
+            color:#999;
+            font-size: 1.4rem;
+            padding: 0 1rem;
+            text-align: right;
+
+            & svg {
+                width: 22px !important;
+                height: 22px !important;
+                opacity: 1;
+            }
+        }
+    }
+
+    & .brand {
+        width: 100%;
+        padding: .5rem 1rem;
+        margin: 0;
+        background: #f8f8f8;
+        display: flex;
+        justify-content: space-between;
+
+        & svg {
+            fill: #b8b5c0 !important;
+            width: 20px !important;
+            height: 20px !important;
+            vertical-align: text-bottom;
+        }
+
+        & .typeImg {
+            width: 4rem;
+            height: 5.5rem;
+            margin-right: 1rem;
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        & .title {
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        & .view {
+            display: flex;
+            align-items: center;
+            color: #999;
+            font-size: 1.4rem;
+            overflow: hidden;
+        }
+
+        & h3, & h5 {
+            font-weight: 400;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        & h3 {
+            color:#19171c;
+            margin: .5rem 0;
+            font-size: 1.6rem;
+            line-height: 2rem;
+        }
+
+        & h5 {
+            font-size: 1.4rem;
+            color:#6441a4;
+            margin: 0;
+
+            & a {
+                text-decoration: none;
+                display: block;
+                line-height: 1em;
+            }
+
+            & span {
+                margin: 0 1rem 0 0;
+                display: inline-block;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    & .itemIframe {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        
+        & iframe, & embed {
+            border: none;
+            width: 100%;
+            height: 100%;
+            max-height: 735px;
+            background:#333;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.itemInfo {
+    width: auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+    & .like {
+        color: #8bc34a !important;
+
+        & svg {
+            fill: #8bc34a !important;
+        }
+    }
+
+    & span {
+        cursor: pointer;
+
+        &:hover {
+            color:#333 !important;
+
+            & svg {
+                color:#333 !important;
+            }
+        }
+    }
+
+    & svg {
+        color:#999 !important;
+    }
+    
+}
+
+    

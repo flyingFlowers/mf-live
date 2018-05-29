@@ -1,0 +1,41 @@
+.scrollBox {
+    flex-grow: 1;
+    margin-bottom: 25px;
+}
+
+.chats {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    & .playerMmr {
+        font-size: 13px;
+        padding: 0 4px;
+        color:#fff;
+        background:#43b581;
+        margin-right: 3px;
+        border-radius: 2px;
+    }
+    & .playerName {
+        font-size: 14px;
+        color:#fff;
+    }
+    
+    & li {
+        line-height: 1.3em;
+        color:#6f6f6f;
+        font-size: 13px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        transition: none;
+        word-break: break-all;
+    }
+}
+
+.share {
+    border-left: 3px solid #6441a4;
+    background-color: #fff;
+    padding: 1rem;
+    margin-top: .2rem;
+    overflow: hidden;
+}

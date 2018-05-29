@@ -1,0 +1,35 @@
+
+.scrollBox {
+    height: calc(100% - 4.5rem) !important;
+    
+    & > div {
+        &:last-child div {
+            background: #000 !important;
+        }
+    }
+}
+
+.favorite {
+    height: 50%;
+    overflow: hidden;
+
+    & h4 span {
+        vertical-align: middle;
+        display: block;
+        line-height: 0;
+        float: right;
+        cursor: pointer;
+
+        &:hover {
+            & svg {
+                color:#fff !important;
+            }
+        }
+        
+        & svg {
+            width: 20px !important;
+            height: 20px !important;
+        }
+    }
+
+}
