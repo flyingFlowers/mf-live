@@ -74,7 +74,7 @@ class Register extends React.Component {
           <div className={classnames(styles.imageSec, styles[toggleClass])} />
           <div className={styles.inputSec}>
             <div>
-              <h4>{textRegLogin}<span>RUARUA.live</span></h4>
+              <h4>{textRegLogin}<span>种花家直播</span></h4>
               <form id="formRegLogin" action={isLogin ? `${API_HOST}/login` : `${API_HOST}/register`} method="get">
                 {
                   !isLogin

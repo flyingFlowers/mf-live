@@ -6,7 +6,7 @@
   "scripts": {
     "webpack": " cross-env NODE_ENV=production webpack -p --bail",
     "start:src": " cross-env NODE_ENV=production webpack-dev-server --compress --watch-poll",
-    "start": "webpack-dev-server --inline --compress",
+    "start": "webpack-dev-server --inline --compress --host 0.0.0.0",
     "start:noc": "webpack-dev-server --inline",
     "lint": "eslint . --ext .js,.jsx --fix",
     "lintnofix": "eslint . --ext .js,.jsx",

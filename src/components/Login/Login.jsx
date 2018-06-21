@@ -36,7 +36,7 @@ class Register extends React.Component {
           <div className={styles.imageSec} />
           <div className={styles.inputSec}>
             <div>
-              <h4>欢迎来到<span>RUARUA.live</span></h4>
+              <h4>欢迎来到<span>种花家直播</span></h4>
               <form id="formLogin" action={`${API_HOST}/login`} method="get" ref="registerForm">
 
                 <TextField
