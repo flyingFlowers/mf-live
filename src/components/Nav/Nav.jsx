@@ -15,14 +15,14 @@ const Nav = (props) => (
     {/* <Link to="/wiki" activeClassName={styles.active} className={styles.navItem} >资讯<span className={styles.lab}>待开放</span></Link>*/}
     <Search />
 
-    <div data-tip="聊天" className={styles.chatSwitch}>
+    {/* <div data-tip="聊天" className={styles.chatSwitch}>
       <Toggle
         defaultToggled={props.layouts.chat}
         onToggle={(event, bool) => {
           props.layoutsChat();
         }}
       />
-    </div>
+    </div> */}
   </div>
 );
 

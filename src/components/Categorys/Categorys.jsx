@@ -72,16 +72,16 @@ class Categorys extends React.Component {
     })
 
     if (data instanceof Array) {
-      data.forEach((item, key) => {
+      data && data.length > 0 && data.forEach((item, key) => {
         if (itemsPlatform.indexOf(item.platform) === -1) itemsPlatform.push(item.platform);
 
         itemsHtml.push(<CategoryItem favoriteStatus={(isFavorite(item, favoriteList))} filterSwitch key={`${item.roomId}${key}`} item={item} type="category" />);
       });
     }
 
-    for (let k = 0; k < 10; k++) {
-      itemsHtml.push(<div key={`empty${k}`} className={styles.categoryEmpty} />);
-    }
+    // for (let k = 0; k < 10; k++) {
+    //   itemsHtml.push(<div key={`empty${k}`} className={styles.categoryEmpty} />);
+    // }
 
     return (
       <div className={classnames(styles.tv)}>
@@ -100,6 +100,7 @@ class Categorys extends React.Component {
         >
           {loading ? <div className={styles.loader}><Spinner size={50} /></div> : ''}
           {error ? <Error img={require('../../../assets/error_fetch.svg')} content="Ooops,服务器好像出了点小问题" /> : itemsHtml}
+          {!loading && !pageLoading && itemsHtml && itemsHtml.length == 0 ? '当前没有直播内容' : itemsHtml}
           {pageLoading ? PageLoader() : ''}
         </Scrollbars>
 

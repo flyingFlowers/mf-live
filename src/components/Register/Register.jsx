@@ -130,7 +130,7 @@ class Register extends React.Component {
                   marginLeft: '10px',
                 }}
               />
-              <p className={styles.underSec}><a href={`${API_HOST}/loginSteam`}>使用Steam账号登录</a></p>
+              {/* <p className={styles.underSec}><a href={`${API_HOST}/loginSteam`}>使用Steam账号登录</a></p> */}
             </div>
           </div>
         </div>
